@@ -26,6 +26,10 @@ import streamlit as st
 
 
 # ===== PAGE HEADER =====
+st.set_page_config(
+    page_title="PDF Tools",
+    page_icon="📄",
+)
 st.title("PDF Tools")
 
 
