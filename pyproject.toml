@@ -4,4 +4,14 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "ocrmypdf>=16.10.0",
+    "pre-commit>=4.2.0",
+    "reportlab>=4.3.1",
+    "streamlit>=1.43.2",
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+]
