@@ -14,6 +14,7 @@ RUN --mount=type=cache,target=/root/.cache/uv \
     --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
     uv sync --frozen --no-install-project
 
-COPY . /app
+COPY src /app
 
-CMD ["streamlit", "run", "list"]
+EXPOSE 8501
+CMD ["uv","run", "streamlit", "run", "streamlit_app/home.py"]
